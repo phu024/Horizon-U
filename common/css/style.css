@@ -131,6 +131,8 @@ nav ul li a {
 
 nav ul li a:hover {
     color: var(--primary);
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
 }
 
 .dropdown {
