@@ -34,3 +34,33 @@ window.addEventListener('resize', () => {
         });
     }
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Mobile menu toggle
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navMenu = document.getElementById('navMenu');
+    
+    if (mobileMenuBtn) {
+        mobileMenuBtn.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+        });
+    }
+    
+    // Initialize bxSlider when jQuery is loaded
+    if (typeof jQuery !== 'undefined') {
+        $(document).ready(function() {
+            $('.testimonials-slider').bxSlider({
+                auto: true,
+                pause: 5000,
+                speed: 500,
+                mode: 'fade',
+                adaptiveHeight: true,
+                controls: true,
+                pager: true,
+                touchEnabled: true,
+                responsive: true
+            });
+        });
+    }
+});
