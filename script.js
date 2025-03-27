@@ -37,10 +37,7 @@ window.addEventListener('resize', () => {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Mobile menu toggle
-    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-    const navMenu = document.getElementById('navMenu');
-    
+        
     if (mobileMenuBtn) {
         mobileMenuBtn.addEventListener('click', function() {
             navMenu.classList.toggle('active');
@@ -63,4 +60,23 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
+});
+
+
+// Welcome Popup functionality
+document.addEventListener('DOMContentLoaded', function() {
+    // Show popup every time the page loads with a slight delay
+    setTimeout(function() {
+        document.getElementById('welcomePopup').classList.add('active');
+    }, 1000); // Delay popup by 1 second
+    
+    // Close popup when X is clicked
+    document.querySelector('.close-popup').addEventListener('click', function() {
+        document.getElementById('welcomePopup').classList.remove('active');
+    });
+    
+    // Close popup when button is clicked
+    document.getElementById('closePopupBtn').addEventListener('click', function() {
+        document.getElementById('welcomePopup').classList.remove('active');
+    });
 });
