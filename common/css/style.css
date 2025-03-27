@@ -5,9 +5,10 @@
     --accent: #e74c3c;
     --light: #f5f5f5;
     --dark: #333;
-    --success: #2ecc71;
+    --success: #20a557;
     --white: #ffffff;
     --gray: #7f8c8d;
+    --black: #01020c;
 }
 
 * {
@@ -76,6 +77,64 @@ ul {
     transform: scale(1.05);
     /* color: var(--secondary); */
 }
+
+.btn-apply {
+    background: linear-gradient(45deg, var(--primary), var(--accent));
+    background-size: 200% 200%;
+    color: var(--light);
+    border: 1px solid transparent;
+    animation: gradient-shift 3s ease infinite, pulse-scale 3s ease-in-out infinite;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes gradient-shift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes pulse-scale {
+
+    0%,
+    100% {
+        transform: scale(1);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    }
+}
+.btn-apply:hover {
+    animation-play-state: paused;
+    transform: scale(1.5);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    color: var(--white);
+    background: var(--success);
+}
+
 
 /* Header/Navigation Styles */
 header {
@@ -440,7 +499,8 @@ nav ul li a:hover {
     position: relative;
 }
 
-.testimonial-text::before, .testimonial-text::after {
+.testimonial-text::before,
+.testimonial-text::after {
     content: '"';
     font-size: 3rem;
     color: var(--primary);
@@ -625,4 +685,3 @@ footer {
         flex-direction: column;
     }
 }
-
