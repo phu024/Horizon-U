@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Application Form | Horizon University</title>
+    <meta name="description" content="Apply to Horizon University programs. Fill out the student application form to start your academic journey.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body>
+    <header>
+    </header>
+
+    <main>
+        <div class="application-container">
+            <div class="form-header">
+                <h1>Student Application Form</h1>
+                <p>Complete the form below to apply to Horizon University programs</p>
+            </div>
+
+            <form id="studentApplication" action="submit-application.php" method="post">
+                <div class="form-section">
+                    <h2>Personal Information</h2>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName" class="required">First Name</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName" class="required">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="required">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone" class="required">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="dob" class="required">Date of Birth</label>
+                            <input type="date" id="dob" name="dob" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address" class="required">Address</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="city" class="required">City</label>
+                            <input type="text" id="city" name="city" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="state" class="required">State/Province</label>
+                            <input type="text" id="state" name="state" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="zip" class="required">Zip/Postal Code</label>
+                            <input type="text" id="zip" name="zip" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="country" class="required">Country</label>
+                        <select id="country" name="country" required>
+                            <option value="">Select Country</option>
+                            <option value="US">United States</option>
+                            <option value="CA">Canada</option>
+                            <option value="UK">United Kingdom</option>
+                            <option value="AU">Australia</option>
+                            <option value="US">Japan</option>
+                            <option value="IN">India</option>
+                            <option value="CN">China</option>
+                            <option value="FR">France</option>
+                            <option value="DE">Thailand</option>
+                            <option value="IT">Italy</option>
+                            <option value="BR">Brazil</option>
+                            <option value="ZA">South Africa</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2>Academic Information</h2>
+                    <div class="form-group">
+                        <label for="program" class="required">Program of Interest</label>
+                        <select id="program" name="program" required>
+                            <option value="">Select Program</option>
+                            <option value="undergraduate">Undergraduate</option>
+                            <option value="graduate">Graduate</option>
+                            <option value="phd">PhD</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="major" class="required">Intended Major/Field of Study</label>
+                        <select id="major" name="major" required>
+                            <option value="">Select Field of Study</option>
+                            <option value="computer-science">Computer Science</option>
+                            <option value="engineering">Engineering</option>
+                            <option value="business">Business Administration</option>
+                            <option value="arts">Arts & Humanities</option>
+                            <option value="sciences">Natural Sciences</option>
+                            <!-- Add more options as needed -->
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="startDate" class="required">Intended Start Date</label>
+                        <select id="startDate" name="startDate" required>
+                            <option value="">Select Start Date</option>
+                            <option value="fall">Fall 2025</option>
+                            <option value="spring">Spring 2026</option>
+                            <option value="summer">Summer 2026</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="education" class="required">Previous Education</label>
+                        <textarea id="education" name="education" placeholder="List your educational background, including schools attended, degrees earned, and graduation dates." required></textarea>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2>Additional Information</h2>
+                    <div class="form-group">
+                        <label for="statement">Personal Statement</label>
+                        <textarea id="statement" name="statement" placeholder="Tell us about yourself, your academic interests, and why you want to attend Horizon University."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="questions">Questions or Comments</label>
+                        <textarea id="questions" name="questions" placeholder="Do you have any questions about our programs or the application process?"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-footer">
+                    <button type="submit" class="btn-submit"><i class="material-icons">save</i><p>Submit Application </p></button>
+                    <button type="button" class="btn-home" onclick="window.location.href='../../index.html'"><i class="material-icons">home</i><p>Return to Homepage</p></button>
+                    <p class="privacy-note">By submitting this form, you agree to our privacy policy and terms of service. Fields marked with * are required.</p>
+                </div>
+            </form>
+    
+        </div>
+    </main>
+
+    <footer>
+    </footer>
+
+    <script>
+        // Basic form validation
+        document.getElementById('studentApplication').addEventListener('submit', function(event) {
+            const requiredFields = document.querySelectorAll('[required]');
+            let isValid = true;
+            
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    isValid = false;
+                    field.style.borderColor = 'red';
+                } else {
+                    field.style.borderColor = '#ddd';
+                }
+            });
+            
+            if (!isValid) {
+                event.preventDefault();
+                alert('Please fill in all required fields.');
+            }
+        });
+    </script>
+</body>
+</html>
