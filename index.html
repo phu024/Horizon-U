@@ -1,11 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Horizon University - Discover Your Potential</title>
+    <link rel="stylesheet" href="common/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- jQuery (required for bxSlider) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- bxSlider CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <!-- bxSlider JS -->
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+
+
 </head>
+
 <body>
-    
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container header-container">
+            <a href="#" id="logo">
+                <div id="logo-img">H</div>
+                Horizon University
+            </a>
+            <div class="mobile-menu-btn">
+                <i class="material-icons">menu</i>
+            </div>
+            <nav>
+                <ul id="navMenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li class="dropdown">
+                        <a href="#">Programs</a>
+                        <div class="dropdown-content">
+                            <a href="#">Undergraduate</a>
+                            <a href="#">Graduate</a>
+                            <a href="#">Online Learning</a>
+                            <a href="#">Professional Development</a>
+                        </div>
+                    </li>
+                    <li><a href="#">Admissions</a></li>
+                    <li><a href="#">Campus Life</a></li>
+                    <li><a href="#">Research</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Discover Your Potential at Horizon University</h1>
+                    <p>Join a community of innovators, leaders, and changemakers dedicated to excellence in education
+                        and research. Experience a transformative educational journey that prepares you for success.</p>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-primary">Apply Now</a>
+                        <a href="#" class="btn btn-secondary">Explore Programs</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Why Choose Horizon</h2>
+                    <p>We offer a unique educational experience characterized by academic excellence, cutting-edge
+                        research, and a vibrant campus community.</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-img">Academic Excellence</div>
+                        <div class="feature-content">
+                            <h3>World-Class Education</h3>
+                            <p>Our distinguished faculty and innovative curriculum provide an education that ranks among
+                                the best globally, with a focus on interdisciplinary learning and real-world
+                                applications.</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-img">Research Opportunities</div>
+                        <div class="feature-content">
+                            <h3>Groundbreaking Research</h3>
+                            <p>Engage in cutting-edge research that addresses global challenges under the guidance of
+                                leading experts in their fields, with access to state-of-the-art facilities.</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-img">Global Community</div>
+                        <div class="feature-content">
+                            <h3>Diverse Campus Life</h3>
+                            <p>Join a vibrant, diverse community of students from over 100 countries, creating a rich
+                                cultural environment that enhances learning and personal growth.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programs Section -->
+        <section class="programs">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Programs</h2>
+                    <p>Discover a wide range of undergraduate and graduate programs designed to prepare you for a
+                        successful career and meaningful contribution to society.</p>
+                </div>
+                <div class="programs-grid">
+                    <div class="program-card">
+                        <div class="program-img">Business & Economics</div>
+                        <div class="program-content">
+                            <span class="badge">Undergraduate & Graduate</span>
+                            <h3>Business Administration</h3>
+                            <p>Prepare for leadership roles in the global business environment with our comprehensive
+                                business programs that combine theoretical knowledge with practical skills.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="program-card">
+                        <div class="program-img">Science & Technology</div>
+                        <div class="program-content">
+                            <span class="badge">Undergraduate & Graduate</span>
+                            <h3>Computer Science</h3>
+                            <p>Develop cutting-edge skills in programming, AI, machine learning, and more with our
+                                innovative computer science programs designed for the digital age.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="program-card">
+                        <div class="program-img">Arts & Humanities</div>
+                        <div class="program-content">
+                            <span class="badge">Undergraduate & Graduate</span>
+                            <h3>Liberal Arts</h3>
+                            <p>Explore the richness of human expression and thought with our liberal arts programs that
+                                foster critical thinking, creativity, and communication skills.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events Section -->
+        <section class="events">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Upcoming Events</h2>
+                    <p>Stay connected with the latest happenings at Horizon University and be part of our vibrant
+                        community events.</p>
+                </div>
+                <div class="events-container">
+                    <div class="event-main">
+                        <div class="event-main-img">Featured Event Image</div>
+                        <div class="event-main-content">
+                            <span class="date">April 15, 2025</span>
+                            <h3>Annual Innovation Summit</h3>
+                            <p>Join us for our flagship event bringing together industry leaders, researchers, and
+                                students to explore the latest innovations and future trends across multiple
+                                disciplines.</p>
+                            <a href="#" class="btn btn-primary">Register Now</a>
+                        </div>
+                    </div>
+                    <div class="event-list">
+                        <div class="event-item">
+                            <div class="event-item-date">
+                                <span class="month">Apr</span>
+                                <span class="day">10</span>
+                            </div>
+                            <div class="event-item-content">
+                                <h4>Open House Day</h4>
+                                <p>Explore our campus, meet faculty, and learn about our programs.</p>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <div class="event-item-date">
+                                <span class="month">Apr</span>
+                                <span class="day">22</span>
+                            </div>
+                            <div class="event-item-content">
+                                <h4>Research Symposium</h4>
+                                <p>Featuring groundbreaking research from our graduate students.</p>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <div class="event-item-date">
+                                <span class="month">May</span>
+                                <span class="day">05</span>
+                            </div>
+                            <div class="event-item-content">
+                                <h4>Career Fair</h4>
+                                <p>Connect with top employers looking for Horizon talent.</p>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <div class="event-item-date">
+                                <span class="month">May</span>
+                                <span class="day">15</span>
+                            </div>
+                            <div class="event-item-content">
+                                <h4>International Culture Festival</h4>
+                                <p>Celebrate diversity with performances, food, and activities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Student Testimonials</h2>
+                    <p>Hear what our students and alumni have to say about their experience at Horizon University.</p>
+                </div>
+                <div class="testimonials-slider">
+                    <div class="testimonial">
+                        <div class="testimonial-text">
+                            <p>My time at Horizon University has been transformative. The supportive faculty,
+                                cutting-edge resources, and diverse community have prepared me not just for a career,
+                                but for life. The hands-on learning experiences and research opportunities have been
+                                invaluable.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">JD</div>
+                            <div class="testimonial-info">
+                                <h4>Jane Doe</h4>
+                                <p>Computer Science, Class of 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-col">
+                        <h3>Contact Us</h3>
+                        <ul>
+                            <li>123 University Avenue</li>
+                            <li>Horizon City, HC 10001</li>
+                            <!-- <li>info@horizonuniversity.edu</li> -->
+                            <li><a href="mailto:info@horizonuniversity.edu">info@horizonuniversity.edu</a></li>
+                            <!-- <li>(+66) 123-4567</li> -->
+                            <li><a href="tel:+661234567">(+66) 123-4567</a></li>
+
+                        </ul>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Programs</a></li>
+                            <li><a href="#">Admissions</a></li>
+                            <li><a href="#">Research</a></li>
+                            <li><a href="#">Campus Life</a></li>
+                            <li><a href="#">Alumni</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="#">Academic Calendar</a></li>
+                            <li><a href="#">Library</a></li>
+                            <li><a href="#">Career Services</a></li>
+                            <li><a href="#">Student Portal</a></li>
+                            <li><a href="#">Faculty Directory</a></li>
+                            <li><a href="#">Campus Map</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Stay Connected</h3>
+                        <p>Subscribe to our newsletter for the latest updates and news from Horizon University.</p>
+                        <form action="#" method="POST" class="newsletter-form">
+                            <input type="email" placeholder="Your Email" required
+                                style="padding: 10px; margin: 10px 0; width: 100%; border-radius: 4px; border: none;">
+                            <button type="submit" class="btn btn-secondary" style="width: 100%;">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <p>&copy; 2025 Horizon University. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a
+                            href="#">Terms of Use</a></p>
+                </div>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </main>
 </body>
+
 </html>
