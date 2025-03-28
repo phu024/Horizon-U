@@ -89,6 +89,7 @@ ul {
     position: relative;
     overflow: hidden;
 }
+
 @keyframes fade-in {
     0% {
         opacity: 0;
@@ -113,26 +114,13 @@ ul {
         background-position: 0% 50%;
     }
 }
-
-@keyframes pulse-scale {
-
-    0%,
-    100% {
-        transform: scale(1);
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    50% {
-        transform: scale(1.05);
-        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-    }
-}
 .btn-apply:hover {
     animation-play-state: paused;
-    transform: scale(1.5);
+    transform: scale(1.05);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
     color: var(--white);
     background: var(--success);
+    transition: all 0.3s ease;
 }
 
 
@@ -599,6 +587,7 @@ nav ul li a:hover {
     background: #fff !important;
     border-radius: 8px !important;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
+    z-index: 0 !important;
 }
 
 /* Footer */
